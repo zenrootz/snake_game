@@ -13,6 +13,12 @@ Welcome to the Snake Game! Experience the classic snake gameplay with a modern t
 
 ## Game Controls
 
+Starting the Game:
+
+- To start the game, navigate to the repository's root directory and run `python main.py` in your command line.
+
+Controlling the Snake:
+
 - **W**: Move Up
 - **A**: Move Left
 - **S**: Move Down
@@ -31,10 +37,30 @@ To view the high scores chart, navigate to the in-game menu and select 'High Sco
 
 ## Installation
 
-Before starting the game, ensure you have `pygame` installed:
+To set up and run the Snake Game, follow these steps:
 
-```
-pip install pygame
+1. Ensure you have Python installed on your system. You can download it from [python.org](https://python.org).
+
+2. Install `pygame`, which is required to run the game:
+
+   ```bash
+   pip install pygame
+   ```
+
+3. Clone the game's repository from GitHub:
+
+   ```bash
+   git clone https://github.com/your-repository-url/snake_game.git
+   cd snake_game
+   ```
+
+4. Run the game using Python:
+
+   ```bash
+   python main.py
+   ```
+
+This will start the game, and you can begin playing immediately.
 ## Installation
 
 Before starting the game, ensure you have `pygame` installed:
@@ -55,3 +81,7 @@ This should open a new window where the game will start running. Use the WASD ke
 ```
 
 Get ready to slither your way to the top of the leaderboard!
+
+## Error Handling
+
+If you encounter any errors while running the game, they will be documented in the `error_log.txt` file located in the `src` directory. This allows for easy troubleshooting and maintenance of the game.
