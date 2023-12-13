@@ -15,7 +15,7 @@ Welcome to the Snake Game! Experience the classic snake gameplay with a modern t
 
 Starting the Game:
 
-- To start the game, navigate to the repository's root directory and run `python main.py` in your command line.
+- To start the game, navigate to the repository's root directory and run `python src/game.py` in your command line.
 
 Controlling the Snake:
 
@@ -57,7 +57,7 @@ To set up and run the Snake Game, follow these steps:
 4. Run the game using Python:
 
    ```bash
-   python main.py
+   python src/game.py
    ```
 
 This will start the game, and you can begin playing immediately.
@@ -72,6 +72,9 @@ pip install pygame
 ## Running the Game
 
 To start the game, open a command line, navigate to the repository's root directory, and run the following command:
+   ```bash
+   python src/game.py
+   ```
 
 ```
 python main.py
