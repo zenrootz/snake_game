@@ -32,10 +32,13 @@ pip install pygame
 
 ## Running the Game
 
-To start the game, navigate to the repository's root directory and run:
+To start the game, open a command line, navigate to the repository's root directory, and run the following command:
 
 ```
 python src/game.py
+```
+
+This should open a new window where the game will start running. Use the WASD keys to control the snake.
 ```
 
 Get ready to slither your way to the top of the leaderboard!

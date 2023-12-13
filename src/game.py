@@ -38,3 +38,7 @@ class Game:
             self.handle_input()
             self.identify_player()
             pygame.display.flip()
+
+if __name__ == "__main__":
+    game = Game()
+    game.run()
