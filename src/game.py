@@ -36,13 +36,13 @@ class Game:
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 if self.player is not None:
-                    if event.key == pygame.K_w:
+                    if event.key == pygame.K_UP:
                         self.player.move_up()
-                    elif event.key == pygame.K_a:
+                    elif event.key == pygame.K_LEFT:
                         self.player.move_left()
-                    elif event.key == pygame.K_s:
+                    elif event.key == pygame.K_DOWN:
                         self.player.move_down()
-                    elif event.key == pygame.K_d:
+                    elif event.key == pygame.K_RIGHT:
                         self.player.move_right()
                 # Add more input handlers if needed
 
