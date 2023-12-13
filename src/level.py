@@ -1,5 +1,9 @@
 import random
 import logging
+import os
+
+if not os.path.exists('src/error_log.txt'):
+    open('src/error_log.txt', 'w').close()
 
 import pygame
 
