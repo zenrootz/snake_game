@@ -7,9 +7,11 @@ class Game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((800, 600))
+        pygame.display.set_caption('Trendy Snake Game')
         self.clock = pygame.time.Clock()
         self.player = None
         self.npcs = []
+        self.loaded = False
 
     def identify_player(self):
         for entity in self.npcs:
@@ -32,11 +34,25 @@ class Game:
                 elif event.key == pygame.K_d:
                     self.player.move_right()
 
+    def load_game(self):
+        # load game assets and display game interface
+        print('Loading game...')
+        self.loaded = True
+
+    def start_game(self):
+        # start the game and display the game interface
+        print('Starting the game...')
+
     def run(self):
+        self.load_game()
+        while not self.loaded:
+            pass
         while True:
             self.clock.tick(60)
             self.handle_input()
             self.identify_player()
+            if self.loaded:
+                self.start_game()
             pygame.display.flip()
 
 if __name__ == "__main__":
