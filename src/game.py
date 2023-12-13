@@ -23,7 +23,7 @@ class Game:
                 pygame.quit()
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_w:
+                if self.player is not None and event.key == pygame.K_w:
                     self.player.move_up()
                 elif event.key == pygame.K_a:
                     self.player.move_left()

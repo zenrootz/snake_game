@@ -11,9 +11,16 @@ Welcome to the Snake Game! Experience the classic snake gameplay with a modern t
 - High scores chart featuring the top 5 scores
 - Randomly generated levels with increasing difficulty
 
-## Controls
+## Game Controls
 
 - **W**: Move Up
+- **A**: Move Left
+- **S**: Move Down
+- **D**: Move Right
+
+## Viewing High Scores
+
+To view the high scores chart, navigate to the in-game menu and select 'High Scores'. You will see the list of top 5 scores achieved by players.- **W**: Move Up
 - **A**: Move Left
 - **S**: Move Down
 - **D**: Move Right
@@ -28,7 +35,13 @@ Before starting the game, ensure you have `pygame` installed:
 
 ```
 pip install pygame
+## Installation
+
+Before starting the game, ensure you have `pygame` installed:
+
 ```
+pip install pygame
+``````
 
 ## Running the Game
 
