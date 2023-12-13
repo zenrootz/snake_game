@@ -1,6 +1,9 @@
 import random
+import logging
 
 import pygame
+
+logging.basicConfig(filename='src/error_log.txt', level=logging.ERROR)
 
 
 class Level:
@@ -16,7 +19,7 @@ class Level:
                 level.append(obstacle)
             self.levels.append(level)
         except Exception as e:
-            print(f'Error generating level: {e}')
+            logging.error(f'Error generating level: {e}')
             return False
         return True
 
@@ -36,8 +39,8 @@ class Level:
         try:
             return self.levels[self.level_number - 1]
         except IndexError:
-            print(f'Error: Level {self.level_number} not found')
+            logging.error(f'Error: Level {self.level_number} not found')
             return None
         except Exception as e:
-            print(f'Unexpected error getting current level: {e}')
+            logging.error(f'Unexpected error getting current level: {e}')
             return None

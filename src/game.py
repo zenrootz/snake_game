@@ -1,6 +1,9 @@
 import sys
+import logging
 
 import pygame
+
+logging.basicConfig(filename='src/error_log.txt', level=logging.ERROR)
 
 
 from src.level import Level  # Import the Level class
@@ -51,7 +54,7 @@ class Game:
             #     raise Exception('Failed to load player sprite')
             self.loaded = True
         except Exception as e:
-            print(f'Error loading game assets: {e}')
+            logging.error(f'Error loading game assets: {e}')
             self.loaded = False
             pygame.quit()
             sys.exit()
