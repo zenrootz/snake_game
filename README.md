@@ -88,3 +88,7 @@ Get ready to slither your way to the top of the leaderboard!
 ## Error Handling
 
 If you encounter any errors while running the game, they will be documented in the `error_log.txt` file located in the `src` directory. This allows for easy troubleshooting and maintenance of the game.
+
+```markdown
+Note: If the `error_log.txt` file does not exist in the `src` directory when you run the game, it will be created automatically.
+```

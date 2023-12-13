@@ -1,8 +1,11 @@
+import os
 import sys
 import logging
 
 import pygame
 
+if not os.path.exists('src/error_log.txt'):
+    open('src/error_log.txt', 'w').close()
 logging.basicConfig(filename='src/error_log.txt', level=logging.ERROR)
 
 
